@@ -109,7 +109,7 @@ span{
     grid-area: divTituloAbout;
 }
 
-.h2Titulo {
+.h2TituloAbout {
     color: #D2D7DE;
     margin: 50px 0px 0px 110px;
 }
@@ -123,7 +123,15 @@ span{
     margin-left: 100px;
 }
 
+.divBtnDescargar{
+    height: 50px;
+    display: flex;
+    justify-content: start;
+}
+
 .btnCv {
+    width: 150px;
+    height: 40px;
     font-weight: 600;
     padding: 7px;
     border-radius: 7px;
@@ -131,8 +139,9 @@ span{
     background-color: #F1D28A;
     border: 1px solid #001427;
     color: #51011E;
-    margin: 10px 7px 0px 7px;
+    margin: 20px 7px 0px 7px;
     transition: all .4s;
+    text-decoration: none;
 }
 
 .btnCv:hover {
@@ -147,6 +156,7 @@ hr{
     color: white;
     width: 5px;
     opacity: 1;
+    border-radius: 5px;
 }
 
 .divFotoAbout {
@@ -198,9 +208,84 @@ hr{
 /* PORTFOLIO */
 
 .seccionPortfolio{
-    height: 1000px;
+    min-height: 1800px;
+    width: 100%;
 }
 
+.divProyecto{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.h2TituloPortfolio{
+    margin: 0px 0px 0px 100px;
+    padding-top: 65px;
+    font-weight: 600;
+}
+
+.hrProyectos{
+    width: 90%;
+    height: 5px;
+    background-color: white;
+    opacity: 1;
+    margin: 70px 0px;
+}
+
+.divImgProyectos{
+    width: 350px;
+    height: 300px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.imgProyectos{
+    height: 100%;
+    transition: all 1s;    
+    border-radius: 15px;
+    opacity: .8;
+   }
+   
+   .imgProyectos:hover{
+       transform: scale(1.05);
+       opacity: 1;
+   }
+
+   .img1{
+    width: 350px;
+   }
+
+   .img4{
+    width: 250px;
+   }
+
+   .img9{
+    width: 350px;
+   }
+
+   .aCode{
+    background-color: transparent;
+    border: 1px solid #F1D28A;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 15px;
+    color: #F1D28A;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block; 
+  }
+  
+  .aCode:hover { 
+    background-color: #F1D28A;
+    border: 1px solid #001427;
+    color: #001427;
+  }
+  
 /* CONTACTO */
 
 footer{
@@ -227,7 +312,7 @@ i:hover{
     height: 5px;
     background-color: white;
     opacity: 1;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 
 .pFooter{
@@ -235,3 +320,242 @@ i:hover{
     text-align: center;
     margin: 25px 0px;
 }
+
+
+
+/********* RESPONSIVE *********/
+
+/* RESPONSIVE 1000 */
+
+@media(max-width: 1000px) {
+    .seccionHome{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    img{
+        height: 400px;
+    }
+
+    .divH{
+        padding: 20px;
+        top: 30%; 
+        }
+        
+        .hHome {
+        font-size: 25px;
+        }
+
+        /* ABOUT */
+
+.seccionAbout{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 300px;
+        grid-template-areas: "divTituloAbout divTituloAbout" 
+                              "divTextoAbout divFotoAbout" ;
+}
+
+.divTextoAbout{
+    width: 350px;
+}
+
+.pTextoAbout{
+    font-size: 13px;
+}
+
+.h2Desarrollador{
+    font-size: 23px;
+}
+.imgFoto{
+    margin-right: 30px;
+}
+
+/* PORTFOLIO */
+
+.divProyecto{
+    width: 400px;
+    height: 450px;
+}
+
+.divImgProyectos{
+    width: 380px;
+    height: 250px;
+}
+}
+
+
+/* RESPONSIVE 800 */
+
+
+@media(max-width: 800px) {
+/* HOME */
+
+.seccionHome{
+    height: 300px;
+    display: flex;
+    justify-content:center !important;
+}
+
+img{
+    height: 300px;
+}
+
+ul {
+  margin: 20px;
+  padding: 10px;
+}
+
+ul li {
+    margin: 2px 7px;
+    font-size: 15px;
+}
+.divH{
+padding: 20px;
+top: 25%; 
+
+}
+
+.hHome {
+font-size: 20px;
+}
+
+/* ABOUT */
+
+
+.seccionAbout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 300px 350px;
+    grid-template-areas: "divTituloAbout divTituloAbout" 
+                         "divTextoAbout divTextoAbout" 
+                         "divFotoAbout divFotoAbout" ;
+}
+
+.pTextoAbout{
+    font-size: 18px;
+}
+
+.divTituloAbout{
+    display: flex;
+    justify-content: center;
+}
+
+.h2TituloAbout{
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.divTextoAbout {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.h2Desarrollador{
+    font-size: 28px;
+}
+
+.divBtnDescargar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    height: 5px;
+    width: 90%;
+}
+
+.divFotoAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgFoto{
+    margin: 10px;
+}
+
+/* SKILLS */
+
+
+.seccionSkills{
+    height: 400px;
+}
+
+.divTituloSkills{
+   margin: 0 !important;
+   display: flex;
+   justify-content: center;
+}
+
+.h2TituloSkills{
+    padding-top: 25px;
+    margin-left: 0px;
+}
+
+.imgSkills{
+   width: 70px;
+   height: 70px;
+   opacity: 1;
+}
+.bootstrap{
+    width: 90px;
+}
+.node{
+    width: 110px;
+    margin-left: -19px;
+    margin-right: -15px;
+}
+
+/* PORTFOLIO */
+
+.divTituloPortfolio{
+    display: flex;
+    justify-content: center;
+}
+
+.h2TituloPortfolio{
+    margin:0;
+}
+
+.hrProyectos{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.seccionPortfolio{
+    height: 4400px;
+}
+
+.divProyecto{
+    width: 400px;
+    height: 450px;
+}
+
+.divImgProyectos{
+    width: 380px;
+    height: 250px;
+}
+   .img1{
+    width:350px;
+   }
+
+   .img4{
+    width: 250px;
+   }
+
+   .img9{
+    width: 300px;
+   }
+   
+   /* FOOTER */
+
+   i{
+    font-size: 40px;
+}
+}
+

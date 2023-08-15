@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1, "img": "imgProyectos/buscadorPaises.png", "programas": "HTML - CSS - JS", "nombre": "Buscador de Paises", "url":"https://github.com/FrancoMoravcik/buscadorDeCapitales"
+    },
+    {
+        "id": 2, "img": "imgProyectos/calculadoraPorcentajes.png", "programas": "HTML - CSS - JS", "nombre": "Calculador de Porcentajes", "url": "https://github.com/FrancoMoravcik/frontEndMentor-desafio2-"
+    },
+    {
+        "id": 3, "img": "imgProyectos/ecommerse1.png", "programas": "HTML - CSS - JS - React", "nombre": "Tienda de Productos", "url":"https://github.com/FrancoMoravcik/tienda1ReactJs"
+    },
+    {
+        "id": 4, "img": "imgProyectos/generadorDeContraseñas.png", "programas": "HTML - CSS - JS", "nombre": "Generador de Contraseñas", "url":"https://github.com/FrancoMoravcik/generadorDeContrasenias"
+    },
+    { 
+        "id": 5, "img": "imgProyectos/ecommerse3.png", "programas": "HTML - CSS - JS", "nombre": "Tienda de Productos", "url":"https://github.com/FrancoMoravcik/Ecommerse1"
+    },
+    {
+        "id": 6, "img": "imgProyectos/temporizador.png", "programas": "HTML - CSS - JS", "nombre": "Temporizador", "url":"https://github.com/FrancoMoravcik/temporizador"
+    },
+    {
+        "id": 7, "img": "imgProyectos/ecommerse2.png", "programas": "HTML - CSS - JS", "nombre": "Tienda de Productos", "url": "https://github.com/FrancoMoravcik/Proyectojs"
+    },
+    {
+        "id": 8, "img": "imgProyectos/sitioWebPlanetas.png", "programas": "HTML - CSS - JS", "nombre": "Sitio Web Planetas", "url":"https://github.com/FrancoMoravcik/sitioWebPlanetas"
+    },
+    {
+        "id": 9, "img": "imgProyectos/sitioWebAbogados.png", "programas": "HTML - CSS", "nombre": "Sitio Web Abogados", "url": "https://github.com/FrancoMoravcik/probandohtml2"
+    }  
+]
