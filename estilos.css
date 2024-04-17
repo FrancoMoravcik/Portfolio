@@ -9,34 +9,34 @@
 }
 
 body {
-   background-color: #001427;
+    background-color: #000810;
 }
 
 /* HOME */
 
-.seccionHome{
+.seccionHome {
     height: 600px;
 }
 
-img{
+img {
     position: relative;
     width: 100%;
     height: 600px;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 ul {
-  display: flex;
-  list-style: none;
-  margin: 20px;
-  padding: 10px;
-  position: absolute;
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.101);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border-radius: 10px;
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.101);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
 ul li {
@@ -45,64 +45,55 @@ ul li {
     border-bottom: 2px solid transparent;
     transition: all .4s;
 }
-ul li:hover{
+
+ul li:hover {
     border-bottom: 2px solid #F1D28A;
     cursor: pointer;
 }
 
-ul li a{
-      text-decoration: none;
-      color: #c5c9d1;
-      border-radius: 5px;     
-      letter-spacing: 1px;
+ul li a {
+    text-decoration: none;
+    color: #c5c9d1;
+    border-radius: 5px;
+    letter-spacing: 1px;
 }
 
-.divH{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-background-color: rgba(86, 86, 86, 0.1);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border-radius: 10px;
-padding: 25px;
-position: absolute;
-top: 40%; 
-left: 50%; 
-transform: translate(-50%, -50%);
+.divH {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(123, 123, 123, 0.067);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hHome {
-    color: #D2D7DE;
-    display: block;
-    white-space: nowrap;
-    width: 31ch;
-
-
-    animation: typing 3s steps(31), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-    
-@keyframes typing {
-    from { width: 0; }
-}
-    
-@keyframes blink {
-    50% { border-color: transparent; }
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-span{
-    color: #E37834;
+span {
+    color: #f1d28ac2;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
 /* ABOUT */
 
-.seccionAbout{
+.seccionAbout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 500px;
-    grid-template-areas: "divTituloAbout divTituloAbout" 
-                         "divTextoAbout divFotoAbout" ;
+    grid-template-rows: 500px;
+    grid-template-areas: "divTextoAbout divFotoAbout";
 }
 
 .divTituloAbout {
@@ -110,12 +101,21 @@ span{
 }
 
 .h2TituloAbout {
-    color: #D2D7DE;
-    margin: 50px 0px 0px 110px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0px 0px 4px 4px #ffffff;
+    margin: 50px 0px 0px 18px;
 }
 
-.pTextoAbout{
+.h3Desarrollador {
+    font-weight: 400;
+}
+
+.pTextoAbout {
     font-size: 18px;
+    color: #c8c8c8b6;
 }
 
 .divTextoAbout {
@@ -123,7 +123,7 @@ span{
     margin-left: 100px;
 }
 
-.divBtnDescargar{
+.divBtnDescargar {
     height: 50px;
     display: flex;
     justify-content: start;
@@ -139,18 +139,19 @@ span{
     background-color: #F1D28A;
     border: 1px solid #001427;
     color: #51011E;
-    margin: 20px 7px 0px 7px;
+    margin: 50px 7px 0px 7px;
     transition: all .4s;
     text-decoration: none;
 }
 
 .btnCv:hover {
-    background-color: #001427;
+    background-color: #000a13;
     border: 1px solid #F1D28A;
     color: #F1D28A;
+    box-shadow: 0px 0px 5px white
 }
 
-hr{
+hr {
     height: 150px;
     background-color: white;
     color: white;
@@ -163,151 +164,183 @@ hr{
     grid-area: divFotoAbout;
 }
 
-.imgFoto{
+.imgFoto {
     opacity: 1;
     margin-right: 100px;
     width: 250px;
     height: 250px;
 }
 
-/* SKILLS */
+/* PORTFOLIO */
 
-.seccionSkills{
-    height: 600px;
-    background-color: #fff;
+.seccionPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.h2TituloSkills{
-    color: #001427;
-    margin: 0px 0px 0px 50px;
-    padding-top: 65px;
-    font-weight: 600;
+aside {
+    width: 500px;
+    display: flex;
 }
 
-.divImgSkills{
-    margin: 50px 0px;
+.divContenedorProgramas{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.imgSkills{
-   width: 100px;
-   height: 100px;
-   opacity: 1;
-}
-.bootstrap{
-    width: 120px;
-    margin-left: -10px;
-}
-.node{
-    width: 140px;
-    margin-left: -30px;
-    margin-right: -10px;
-}
-
-/* PORTFOLIO */
-
-.seccionPortfolio{
-    min-height: 1800px;
-    width: 100%;
-}
-
-.divProyecto{
-    width: 400px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
-.h2TituloPortfolio{
-    margin: 0px 0px 0px 100px;
-    padding-top: 65px;
-    font-weight: 600;
-}
-
-.hrProyectos{
-    width: 90%;
-    height: 5px;
-    background-color: white;
-    opacity: 1;
-    margin: 70px 0px;
-}
-
-.divImgProyectos{
-    width: 350px;
-    height: 300px;
-    cursor: pointer;
+.divImgProgramas {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    width: 45px;
+    height: 45px;
+    padding: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all .3s;
 }
 
-.imgProyectos{
+.divImgProgramas:hover {
+    box-shadow: 0px 0px 2px 0px white;
+}
+
+.imgProgramas {
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+}
+
+.imgB {
+    height: 20px;
+}
+
+.imgJ {
+    width: 20px;
+    height: 20px;
+}
+
+.divProyecto {
+    position: relative;
+    max-width: 400px;
+    height: 252px;
+    margin: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.133);
+}
+
+.imgProyectos {
+    width: 100%;
+    height: 250px;
+    opacity: 1;
+    border-radius: 8px;
+}
+
+.divInfoProyectos {
+    position: absolute;
+    bottom: 0;
+    background-color: #00000096;
+    width: 100%;
     height: 100%;
-    transition: all 1s;    
-    border-radius: 15px;
-    opacity: .8;
-   }
-   
-   .imgProyectos:hover{
-       transform: scale(1.05);
-       opacity: 1;
-   }
-
-   .img1{
-    width: 350px;
-   }
-
-   .img4{
-    width: 250px;
-   }
-
-   .img9{
-    width: 350px;
-   }
-
-   .aCode{
-    background-color: transparent;
-    border: 1px solid #F1D28A;
-    border-radius: 5px;
-    padding: 5px 15px;
-    margin: 15px;
-    color: #F1D28A;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     cursor: pointer;
+}
+
+.h4Nombre {
+    color: #ffffff;
     font-weight: 600;
-    display: inline-block; 
-  }
-  
-  .aCode:hover { 
+    font-size: 16px;
+    margin: 10px 20px 10px 20px;
+}
+
+.divLenguajes {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 10px 10px 15px;
+}
+
+
+.pLenguaje {
     background-color: #F1D28A;
-    border: 1px solid #001427;
     color: #001427;
-  }
-  
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 3px 7px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.p1 {
+    width: 60px;
+}
+
+.p2 {
+    width: 60px;
+}
+
+.p3 {
+    width: 60px;
+}
+
+.p7 {
+    width: 60px;
+}
+
+.p10 {
+    width: 60px;
+}
+
+.p4 {
+    display: none;
+}
+
+.p5 {
+    display: none;
+}
+
+.p6 {
+    display: none;
+}
+
+.p8 {
+    display: none;
+}
+
+.p9 {
+    display: none;
+}
+
+
+
 /* CONTACTO */
 
-footer{
+footer {
     height: 100px;
 }
 
-.divI{
+.divI {
     height: 70px;
     width: 90%;
 }
 
-i{
+i {
     font-size: 50px;
     padding: 5px;
 }
 
-i:hover{
+i:hover {
     color: #F1D28A;
     cursor: pointer;
 }
 
-.hrFooter{
+.hrFooter {
     width: 90%;
     height: 5px;
     background-color: white;
@@ -315,7 +348,7 @@ i:hover{
     margin: 40px 0px;
 }
 
-.pFooter{
+.pFooter {
     width: 400px;
     text-align: center;
     margin: 25px 0px;
@@ -325,237 +358,392 @@ i:hover{
 
 /********* RESPONSIVE *********/
 
-/* RESPONSIVE 1000 */
 
 @media(max-width: 1000px) {
-    .seccionHome{
+    .seccionHome {
         height: 400px;
         display: flex;
         justify-content: center;
     }
-    
-    img{
+
+    img {
         height: 400px;
     }
 
-    .divH{
+    .divH {
         padding: 20px;
-        top: 30%; 
-        }
-        
-        .hHome {
+        top: 30%;
+    }
+
+    .hHome {
         font-size: 25px;
-        }
+    }
 
-        /* ABOUT */
+    /* ABOUT */
 
-.seccionAbout{
+    .seccionAbout {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px 300px;
-        grid-template-areas: "divTituloAbout divTituloAbout" 
-                              "divTextoAbout divFotoAbout" ;
+        grid-template-rows: 400px;
+        grid-template-areas: "divTextoAbout divFotoAbout";
+    }
+
+    .divTextoAbout {
+        width: 350px;
+    }
+
+    .pTextoAbout {
+        font-size: 14px;
+    }
+
+    .h2Desarrollador {
+        font-size: 23px;
+    }
+
+    .imgFoto {
+        margin-right: 30px;
+    }
 }
-
-.divTextoAbout{
-    width: 350px;
-}
-
-.pTextoAbout{
-    font-size: 13px;
-}
-
-.h2Desarrollador{
-    font-size: 23px;
-}
-.imgFoto{
-    margin-right: 30px;
-}
-
-/* PORTFOLIO */
-
-.divProyecto{
-    width: 400px;
-    height: 450px;
-}
-
-.divImgProyectos{
-    width: 380px;
-    height: 250px;
-}
-}
-
-
-/* RESPONSIVE 800 */
-
 
 @media(max-width: 800px) {
-/* HOME */
+    /* HOME */
 
-.seccionHome{
-    height: 300px;
-    display: flex;
-    justify-content:center !important;
+    .seccionHome {
+        height: 300px;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    img {
+        height: 300px;
+    }
+
+    ul {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    ul li {
+        margin: 2px 7px;
+        font-size: 15px;
+    }
+
+    .divH {
+        padding: 20px;
+        top: 25%;
+    }
+
+    .hHome {
+        font-size: 20px;
+    }
+
+    /* ABOUT */
+
+    .seccionAbout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 450px 400px;
+        grid-template-areas: "divTextoAbout divTextoAbout"
+            "divFotoAbout divFotoAbout";
+    }
+
+    .pTextoAbout {
+        font-size: 17px;
+    }
+
+    .divTextoAbout {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .h3Desarrollador {
+        font-size: 25px;
+    }
+
+    .divBtnDescargar {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        height: 5px;
+        width: 90%;
+    }
+
+    .divFotoAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgFoto {
+        margin: 10px;
+    }
+  
+    /* PORTFOLIO */
+
+    aside {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+
+    i {
+        font-size: 40px;
+    }
 }
 
-img{
-    height: 300px;
+@media(max-width: 500px) {
+    /* HOME */
+
+    .seccionHome {
+        height: 300px;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    img {
+        height: 280px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    ul li {
+        margin: 2px 7px;
+        font-size: 15px;
+    }
+
+    .divH {
+        padding: 20px;
+        top: 20%;
+        margin: auto;
+    }
+
+    .hHome {
+        font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .seccionAbout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px 450px;
+        grid-template-areas: "divTextoAbout divTextoAbout"
+            "divFotoAbout divFotoAbout";
+    }
+
+    .pTextoAbout {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .h2TituloAbout {
+        margin-left: 0;
+    }
+
+    .divTextoAbout {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .h3Desarrollador {
+        font-size: 25px;
+    }
+
+    .divBtnDescargar {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        height: 5px;
+        width: 80%;
+        margin-bottom: -60px;
+    }
+
+    .divFotoAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgFoto {
+        margin-bottom: -80px;
+    }
+
+    /* FOOTER */
+
+    i {
+        font-size: 40px;
+    }
 }
 
-ul {
-  margin: 20px;
-  padding: 10px;
+@media(min-width: 600px) {
+    /* PORTFOLIO */    
+
+    .divProyecto {
+        max-width: 650px;
+        height: 352px;
+    }
+
+    .imgProyectos {
+        height: 350px;
+    }
+
+    .divInfoProyectos {
+        background-color: #0000009a;
+    }
+
+    .h4Nombre {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .divLenguajes {
+        width: 40%;
+    }
+
+    .pLenguaje {
+        font-size: 12px;
+    }
+
+    .p1 {
+        width: 68px;
+    }
+
+    .p2 {
+        width: 68px;
+    }
+
+    .p3 {
+        width: 68px;
+    }
+
+    .p7 {
+        width: 68px;
+    }
+
+    .p10 {
+        width: 68px;
+    }
+
 }
 
-ul li {
-    margin: 2px 7px;
-    font-size: 15px;
-}
-.divH{
-padding: 20px;
-top: 25%; 
+@media(min-width: 950px) {
+    /* PORTFOLIO */
+
+    .contenedorProyectos{
+        margin-top: 80px;
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap:wrap
+    }
+    
+    .divProyecto {
+        max-width: 450px;
+        height: 272px;
+    }
+
+    .imgProyectos {
+        height: 270px;
+    }
+
+    .divInfoProyectos {
+        background-color: #0000009a;
+    }
+
+    .h4Nombre {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .divLenguajes {
+        width: 60%;
+    }
+
+    .pLenguaje {
+        font-size: 12px;
+    }
+
+    .p1 {
+        width: 70px;
+    }
+
+    .p2 {
+        width: 70px;
+    }
+
+    .p3 {
+        width: 70px;
+    }
+
+    .p7 {
+        width: 70px;
+    }
+
+    .p10 {
+        width:70px;
+    }
 
 }
 
-.hHome {
-font-size: 20px;
+@media(min-width: 1220px) {
+    /* PORTFOLIO */
+
+    .contenedorProyectos{     
+        justify-content: space-evenly;
+    }
+    
+    .divProyecto {
+        min-width: 550px;
+        height: 322px;
+    }
+
+    .imgProyectos {
+        height: 320px;
+    }
+
+    .h4Nombre {
+        font-size: 20px;
+    }
+
+    .divLenguajes {
+        width: 50%;
+    }
+
+    .p1 {
+        width: 70px;
+    }
+
+    .p2 {
+        width: 70px;
+    }
+
+    .p3 {
+        width: 70px;
+    }
+
+    .p7 {
+        width: 70px;
+    }
+
+    .p10 {
+        width:70px;
+    }
+
 }
-
-/* ABOUT */
-
-
-.seccionAbout{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100px 300px 350px;
-    grid-template-areas: "divTituloAbout divTituloAbout" 
-                         "divTextoAbout divTextoAbout" 
-                         "divFotoAbout divFotoAbout" ;
-}
-
-.pTextoAbout{
-    font-size: 18px;
-}
-
-.divTituloAbout{
-    display: flex;
-    justify-content: center;
-}
-
-.h2TituloAbout{
-    margin-top: 50px;
-    margin-left: 0;
-}
-
-.divTextoAbout {
-    width: 100%;
-    margin: 0;
-    align-items: center;
-    text-align: center;
-}
-
-.h2Desarrollador{
-    font-size: 28px;
-}
-
-.divBtnDescargar{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-hr{
-    height: 5px;
-    width: 90%;
-}
-
-.divFotoAbout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imgFoto{
-    margin: 10px;
-}
-
-/* SKILLS */
-
-
-.seccionSkills{
-    height: 400px;
-}
-
-.divTituloSkills{
-   margin: 0 !important;
-   display: flex;
-   justify-content: center;
-}
-
-.h2TituloSkills{
-    padding-top: 25px;
-    margin-left: 0px;
-}
-
-.imgSkills{
-   width: 70px;
-   height: 70px;
-   opacity: 1;
-}
-.bootstrap{
-    width: 90px;
-}
-.node{
-    width: 110px;
-    margin-left: -19px;
-    margin-right: -15px;
-}
-
-/* PORTFOLIO */
-
-.divTituloPortfolio{
-    display: flex;
-    justify-content: center;
-}
-
-.h2TituloPortfolio{
-    margin:0;
-}
-
-.hrProyectos{
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-.seccionPortfolio{
-    height: 4400px;
-}
-
-.divProyecto{
-    width: 400px;
-    height: 450px;
-}
-
-.divImgProyectos{
-    width: 380px;
-    height: 250px;
-}
-   .img1{
-    width:350px;
-   }
-
-   .img4{
-    width: 250px;
-   }
-
-   .img9{
-    width: 300px;
-   }
-   
-   /* FOOTER */
-
-   i{
-    font-size: 40px;
-}
-}
-

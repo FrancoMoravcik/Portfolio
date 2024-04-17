@@ -31,7 +31,7 @@
     link.addEventListener('click', event => {
       event.preventDefault();
       const target = event.target.getAttribute('href');
-      smoothScroll(target, 1000); // Cambia la duración según tus preferencias
+      smoothScroll(target, 500); // Cambia la duración según tus preferencias
     });
   });
 
@@ -44,22 +44,34 @@
   .then(datos => {
      datos.forEach(e => {
       const divProyecto = document.createElement("div")
-      divProyecto.classList.add = ("col-lg-4 col-md-2 col-sm-1")
       divProyecto.className = "divProyecto"     
       divProyecto.innerHTML = 
       `
-      <div class="divImgProyectos divProyectos${e.id}">
-      <img class="imgProyectos img${e.id}" src="${e.img}">
+      <div class="divImgProyectos">
+        <img class="imgProyectos" src="${e.img}">
       </div>
 
-      <div class="d-flex flex-column align-items-center m-2">
-      <h4 class="m-3 h4Nombre">${e.nombre}</h4>
-      <h5>${e.programas}</h5>
-      <a href="${e.url}" target="_blank" class="aCode">Code &lt;/&gt </a>
-      </div>
+    
+       <div class="divInfoProyectos">
+
+        <h4 class='h4Nombre'>${e.nombre}</h4>   
+
+        <div class='divLenguajes'> 
+          <p class='pLenguaje'>${e.lenguaje1}</p>
+          <p class='pLenguaje'>${e.lenguaje2}</p>
+          <p class='pLenguaje'>${e.lenguaje3}</p>
+          <p class='pLenguaje p${e.id}'>${e.lenguaje4}</p>
+        </div>
+
+        </div>
+ 
       
-      `
+      `;
 
-      contenedorProyectos.appendChild(divProyecto)
-    })
-  })
+      divProyecto.addEventListener("click", function() {
+        window.location.href = e.urlGitHub;
+      });
+
+      contenedorProyectos.appendChild(divProyecto);
+    });
+  });

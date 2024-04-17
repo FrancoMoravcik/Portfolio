@@ -1,29 +1,102 @@
 [
     {
-        "id": 1, "img": "imgProyectos/buscadorPaises.png", "programas": "HTML - CSS - JS", "nombre": "Buscador de Paises", "url":"https://github.com/FrancoMoravcik/buscadorDeCapitales"
+        "id": 1, 
+        "img": "imgProyectos/appEnlaces.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "React JS", 
+        "nombre": "Link-sharing app (Frontend Mentor Challenge)", 
+        "urlGitHub":"https://github.com/FrancoMoravcik/appEnlaces"
     },
     {
-        "id": 2, "img": "imgProyectos/calculadoraPorcentajes.png", "programas": "HTML - CSS - JS", "nombre": "Calculador de Porcentajes", "url": "https://github.com/FrancoMoravcik/frontEndMentor-desafio2-"
+        "id": 2, 
+        "img": "imgProyectos/capturaPhotosnap.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "React JS", 
+        "nombre": "Photosnap (Frontend Mentor Challenge)", 
+        "urlGitHub":"https://github.com/FrancoMoravcik/photosnap "
     },
     {
-        "id": 3, "img": "imgProyectos/ecommerse1.png", "programas": "HTML - CSS - JS - React", "nombre": "Tienda de Productos", "url":"https://github.com/FrancoMoravcik/tienda1ReactJs"
+        "id": 3, 
+        "img": "imgProyectos/tiendaMates.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "React JS", 
+        "nombre": "Ecommerse Mates", 
+        "urlGitHub":"https://github.com/FrancoMoravcik/tiendaMates "
     },
     {
-        "id": 4, "img": "imgProyectos/generadorDeContraseñas.png", "programas": "HTML - CSS - JS", "nombre": "Generador de Contraseñas", "url":"https://github.com/FrancoMoravcik/generadorDeContrasenias"
+        "id": 4, 
+        "img": "imgProyectos/generadorDeContraseñas.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "",  
+        "nombre": "Password generator app (Frontend Mentor Challenge)", 
+        "urlGitHub": "https://francomoravcik.github.io/generadorDeContrasenias/"
     },
     { 
-        "id": 5, "img": "imgProyectos/ecommerse3.png", "programas": "HTML - CSS - JS", "nombre": "Tienda de Productos", "url":"https://github.com/FrancoMoravcik/Ecommerse1"
+        "id": 5, 
+        "img": "imgProyectos/ecommerseVideojuegos.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "", 
+        "nombre": "Ecommerse VideoJuegos", 
+        "urlGitHub":"https://francomoravcik.github.io/ecommerseVideojuegos/ "
     },
     {
-        "id": 6, "img": "imgProyectos/temporizador.png", "programas": "HTML - CSS - JS", "nombre": "Temporizador", "url":"https://github.com/FrancoMoravcik/temporizador"
+        "id": 6, 
+        "img": "imgProyectos/temporizador.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "",  
+        "nombre": "Launch countdown timer (Frontend Mentor Challenge)", 
+        "urlGitHub":"https://francomoravcik.github.io/temporizador/ "
     },
     {
-        "id": 7, "img": "imgProyectos/ecommerse2.png", "programas": "HTML - CSS - JS", "nombre": "Tienda de Productos", "url": "https://github.com/FrancoMoravcik/Proyectojs"
+        "id": 7, 
+        "img": "imgProyectos/tipCalculator.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "React JS", 
+        "nombre": "Tip calculator app (Frontend Mentor Challenge)", 
+        "urlGitHub":"https://github.com/FrancoMoravcik/tipCalculator"
     },
     {
-        "id": 8, "img": "imgProyectos/sitioWebPlanetas.png", "programas": "HTML - CSS - JS", "nombre": "Sitio Web Planetas", "url":"https://github.com/FrancoMoravcik/sitioWebPlanetas"
+        "id": 8, 
+        "img": "imgProyectos/sitioWebPlanetas.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "",  
+        "nombre": "Planets fact site (Frontend Mentor Challenge)", 
+        "urlGitHub":"https://francomoravcik.github.io/sitioWebPlanetas/ "
     },
     {
-        "id": 9, "img": "imgProyectos/sitioWebAbogados.png", "programas": "HTML - CSS", "nombre": "Sitio Web Abogados", "url": "https://github.com/FrancoMoravcik/probandohtml2"
+        "id": 9, 
+        "img": "imgProyectos/ticTacToe.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "", 
+        "nombre": "Tic Tac Toe (Frontend Mentor Challenge)", 
+        "urlGitHub": "https://francomoravcik.github.io/TicTacToe/"
+    },  
+    {
+        "id": 10, 
+        "img": "imgProyectos/appEntretenimiento.png", 
+        "lenguaje1": "HTML", 
+        "lenguaje2": "CSS", 
+        "lenguaje3": "JS", 
+        "lenguaje4": "React JS", 
+        "nombre": "Entertainment web app (Frontend Mentor Challenge)", 
+        "urlGitHub": "https://github.com/FrancoMoravcik/appEntretenimiento"
     }  
 ]
