@@ -7,7 +7,7 @@
         "lenguaje3": "JS", 
         "lenguaje4": "React JS", 
         "nombre": "Link-sharing app (Frontend Mentor Challenge)", 
-        "urlGitHub":"https://github.com/FrancoMoravcik/appEnlaces"
+        "urlGitHub":"https://linksharingapp.netlify.app/"
     },
     {
         "id": 2, 
@@ -17,20 +17,10 @@
         "lenguaje3": "JS", 
         "lenguaje4": "React JS", 
         "nombre": "Photosnap (Frontend Mentor Challenge)", 
-        "urlGitHub":"https://github.com/FrancoMoravcik/photosnap "
+        "urlGitHub":"https://photosnap2024.netlify.app/"
     },
     {
         "id": 3, 
-        "img": "imgProyectos/tiendaMates.png", 
-        "lenguaje1": "HTML", 
-        "lenguaje2": "CSS", 
-        "lenguaje3": "JS", 
-        "lenguaje4": "React JS", 
-        "nombre": "Ecommerse Mates", 
-        "urlGitHub":"https://github.com/FrancoMoravcik/tiendaMates "
-    },
-    {
-        "id": 4, 
         "img": "imgProyectos/generadorDeContraseñas.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -40,7 +30,7 @@
         "urlGitHub": "https://francomoravcik.github.io/generadorDeContrasenias/"
     },
     { 
-        "id": 5, 
+        "id": 4, 
         "img": "imgProyectos/ecommerseVideojuegos.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -50,7 +40,7 @@
         "urlGitHub":"https://francomoravcik.github.io/ecommerseVideoJuegos/"
     },
     {
-        "id": 6, 
+        "id": 5, 
         "img": "imgProyectos/temporizador.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -60,7 +50,7 @@
         "urlGitHub":"https://francomoravcik.github.io/temporizador/ "
     },
     {
-        "id": 7, 
+        "id": 6, 
         "img": "imgProyectos/tipCalculator.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -70,7 +60,7 @@
         "urlGitHub":"https://francomoravcik.github.io/tip-calculator/build/"
     },
     {
-        "id": 8, 
+        "id": 7, 
         "img": "imgProyectos/sitioWebPlanetas.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -80,7 +70,7 @@
         "urlGitHub":"https://francomoravcik.github.io/sitioWebPlanetas/ "
     },
     {
-        "id": 9, 
+        "id": 8, 
         "img": "imgProyectos/ticTacToe.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
@@ -90,13 +80,13 @@
         "urlGitHub": "https://francomoravcik.github.io/TicTacToe/"
     },  
     {
-        "id": 10, 
+        "id": 9, 
         "img": "imgProyectos/appEntretenimiento.png", 
         "lenguaje1": "HTML", 
         "lenguaje2": "CSS", 
         "lenguaje3": "JS", 
         "lenguaje4": "React JS", 
         "nombre": "Entertainment web app (Frontend Mentor Challenge)", 
-        "urlGitHub": "https://github.com/FrancoMoravcik/appEntretenimiento"
+        "urlGitHub": "https://morav.netlify.app/"
     }  
 ]
